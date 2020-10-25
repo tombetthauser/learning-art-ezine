@@ -32,19 +32,19 @@ const spacer = (div, squish = true) => {
     width = width.slice(0, width.length - 2)
   }
   string += `width:${width}px;`
-  console.log(string)
 
   div.setAttribute("style", string);
 }
 
 const shifter = () => {
-  const time = 200 + Math.floor(Math.random() * 500);
+  const time = 250 + Math.floor(Math.random() * 30000) / boxes.length;
 
   setTimeout(() => {
+    console.log(`Setting new shift timeout for ${time / 1000} seconds.`)
     const boxes = document.querySelectorAll('.box');
     const box = boxes[Math.floor(Math.random() * boxes.length)];
 
-    spacer(box, false)
+    spacer(box)
     shifter();
   }, time);
 }
