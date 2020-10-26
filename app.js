@@ -63,7 +63,20 @@ const boxes = [
       tag: "p",
       text: "There's a somewhat common misconception that the oldest visual art is found in France, Spain and Germany. This is super inaccurate, the oldest evidence of visual art is found in East Africa and South Africa. Often we only have the implements of pre-historic African art production or incomplete artworks as the oldest examples, wheras many of the oldest European works have been shockingly well preserved. This might just be due to differences in geology, with Europe simply having more caves whose walls were better suited to preserving paintings. But there's also a better than good chance that European nationalism and concepts of historical narrative also played some kind of role in this descrepency. In any case when we learn about the origins of art history books often start by focusing on European cave paintings because we have so many well preserved examples of them, but archaic proto-humans were clearly making visual art at least 200,000 years before anyone in Europe, even if most of it hasn't been preserved."
     }
-  ]
+  ],
+  [ // box 3 ------------------
+    {
+      tag: "img",
+      src: "https://lh3.googleusercontent.com/proxy/b6FHY-WxW3OoPam0pZ8ZEiG6IOG6X4jTj5JcIGSrkAVn_oSFtapllGbOYksCOjcPKhnevLXeCvQ-lHA6GwIz67_yY98"
+    },
+    {
+      tag: "h3",
+      text: "Self expression is a historical anomaly."
+    },{
+      tag: "p",
+      text: "Many people assume that part of the fundamental definition of art is that it's free, and that if you aren't doing whatever you want then it's not really fine art. But for the vast majority of cultural history in most parts of the world the production of art was a mid-level or low-level working class occupation where artists made what they were told or paid to make. It's exceedingly rare to see examples of Egyptian or Mayan art where the artist is freely exploring their own psyche or creative voice, but if a 20th or 21st century artist isn't humanistically celebrating their individuality they might not even be identified as fine artists. There is value in both kinds of work, but it's important to note that these are two very different sets of cultural values and at the very least we should recognize that individual free expression is the exception not the rule and that if value it we may at some point need to take serious measures to ensure it's continuity."
+    },
+  ],
 ]
 
 const spacer = (div, squish = true) => {
@@ -104,7 +117,6 @@ const populate = () => {
     box.forEach(object => {
       const ele = document.createElement(object.tag);
       if (object.tag === "img") {
-        alert(ele)
         ele.setAttribute("src", object.src);
       } else {
         ele.innerHTML = object.text;
