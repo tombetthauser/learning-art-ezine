@@ -35,11 +35,11 @@ const boxes = [
   [ // box 0 ------------------
     {
       tag: "h1",
-      text: "Things I think I learned while I was learning and teaching art."
+      text: "Things I think I learned while I was learning to teach art."
     },
     {
       tag: "p",
-      text: "I studied painting at the San Francisco Art Institute and then Yale as a grad student. Then I taught painting and art history at some colleges across California for the better part of a decade. Recently I realized that teaching can't really support most people who do it and I started working as a software engineer. I'm still an artist though. These are just some things I learned that I wanted to write down before I forget them."
+      text: "I studied painting at the San Francisco Art Institute and then Yale as a grad student. Then I taught painting and art history at some colleges across California for the better part of a decade. Recently I realized that teaching can't really support most people who do it and I started working as a software engineer. I'm still an artist though. These are just some thoughts that I wanted to write down before I forget them."
     }
   ],
   [ // box 1 ------------------
@@ -71,10 +71,19 @@ const boxes = [
     },
     {
       tag: "h3",
-      text: "Self expression is a historical anomaly."
+      text: "Self expression is the exception, not the rule."
     },{
       tag: "p",
       text: "Many people assume that part of the fundamental definition of art is that it's free, and that if you aren't doing whatever you want then it's not really fine art. But for the vast majority of cultural history in most parts of the world the production of art was a mid-level or low-level working class occupation where artists made what they were told or paid to make. It's exceedingly rare to see examples of Egyptian or Mayan art where the artist is freely exploring their own psyche or creative voice, but if a 20th or 21st century artist isn't humanistically celebrating their individuality they might not even be identified as fine artists. There is value in both kinds of work, but it's important to note that these are two very different sets of cultural values and at the very least we should recognize that individual free expression is the exception not the rule and that if value it we may at some point need to take serious measures to ensure it's continuity."
+    },
+  ],
+  [ // box 4 ------------------
+    {
+      tag: "h3",
+      text: "Three days in the studio, and try to make it four."
+    },{
+      tag: "p",
+      text: "When I got into grad school, I looked up to Rob Storr with a Pete Seeger level of folk hero reverence. He was the dean of the Yale School of Art while I was there and my proudest moment was selling a small painting of my even smaller studio apartment to him at the end of my time there. I think the most important thing I ever heard him say was that all we had to do to be artists after we graduated was to get into our studios three days a week, and to always try to make it four. And that all we had to seek in our studios were embers worth blowing on for years or decades. For those of us that faced challanging futures wrought with the frustrations of balancing our studio schedules with the necessity to work two or three jobs at a time to make ends meet these words were immeasurably empowering. They helped get me through some of the most difficult periods of my life."
     },
   ],
 ]
