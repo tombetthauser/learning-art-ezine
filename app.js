@@ -20,7 +20,8 @@ const boxes2 = [
         "<li>danielherwitt</li>" +
         "<li>evannesbit</li>" +
         "<li>michellfishugh</li>" +
-        "<li>francescalorusso</li>"
+        "<li>francescalorusso</li>" +
+        "<li>emilyadams</li>" 
     }  
   ],
   [
@@ -35,7 +36,7 @@ const boxes = [
   [ // box 0 ------------------
     {
       tag: "h1",
-      text: "Things I think I learned while I was learning to teach art."
+      text: "Things I think I learned while I was learning and teaching art."
     },
     {
       tag: "p",
@@ -80,10 +81,23 @@ const boxes = [
   [ // box 4 ------------------
     {
       tag: "h3",
-      text: "Three days in the studio, and try to make it four."
+      text: "Three days in the studio, try for four."
     },{
       tag: "p",
-      text: "When I got into grad school, I looked up to Rob Storr with a Pete Seeger level of folk hero reverence. He was the dean of the Yale School of Art while I was there and my proudest moment was selling a small painting of my even smaller studio apartment to him at the end of my time there. I think the most important thing I ever heard him say was that all we had to do to be artists after we graduated was to get into our studios three days a week, and to always try to make it four. And that all we had to seek in our studios were embers worth blowing on for years or decades. For those of us that faced challanging futures wrought with the frustrations of balancing our studio schedules with the necessity to work two or three jobs at a time to make ends meet these words were immeasurably empowering. They helped get me through some of the most difficult periods of my life."
+      text: "This one is about practicing art, not art history. When I got into grad school, I looked up to Rob Storr with a Pete Seeger level of folk hero reverence. He was the dean of the Yale School of Art while I was there and my proudest moment was selling a small painting of my even smaller studio apartment to him at the end of my time there. I think the most important thing I ever heard him say was that all we had to do to be artists after we graduated was to get into our studios three days a week, and to always try to make it four. And that all we had to seek in our studios were embers worth blowing on for years or decades. For those of us that faced challanging futures wrought with the frustrations of balancing our studio schedules with the necessity to work two or three jobs at a time to make ends meet these words were immeasurably empowering. They helped get me through some of the most difficult periods of my life."
+    },
+  ],
+  [ // box 4 ------------------
+    {
+      tag: "img",
+      src: "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstartswithabang%2Ffiles%2F2016%2F11%2F999px-Nasa_blue_marble.jpg"
+    },
+    {
+      tag: "h3",
+      text: "In the end, it might be all we have."
+    },{
+      tag: "p",
+      text: "I was born in San Francisco and grew up in different parts of the bay area often around a lot of rich people. I never thought of us as poor because my parents worked in the arts and for cultural institutions, but rich and poor are relative terms. In any case I saw first hand what people do with their time when they no longer have to worry about money, and it consists of a healthy mix of yoga, expensive coffee and on the productive end music and visual art. In my more optimistic moments I can imagine a future that follows the most positive of neo-liberal bedtime stories where technology gradually replaces workforces and creates the economic abundance necessary for a universal basic income and we find ourselves in a eutopic post-labor state of everlasting global peace. In this world the only labor that would still be best done by humans would be the production of art. It seems to me that that may already be the direction in which art is headed. The non-automatable. I wouldn't be altogether suprised if the reason no advanced alien civilizations have contacted us is because they are all too busy painting and playing in their ameature jazz bands in between pilates classes. In any case my point is that making art may be the only thing we have left to do, if everything goes rediculously well for our species. This was often my justification for why my art courses were considered required classes for students getting economics and biology degrees."
     },
   ],
 ]
@@ -106,7 +120,7 @@ const spacer = (div, squish = true) => {
 }
 
 const shifter = () => {
-  const time = 250 + Math.floor(Math.random() * 30000) / boxes.length;
+  const time = 250 + Math.floor(Math.random() * 300000) / boxes.length;
 
   setTimeout(() => {
     console.log(`Setting new shift timeout for ${time / 1000} seconds.`)
